@@ -80,21 +80,18 @@ public class StorePage extends javax.swing.JFrame {
         HatText.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         HatText.setText("Stylish Hat");
 
-        HatImage.setIcon(new javax.swing.ImageIcon("C:\\Users\\gosta\\Documents\\NetBeansProjects\\DistributedProject\\src\\main\\java\\icons\\Hat.jpg")); // NOI18N
         HatImage.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 HatImageMouseClicked(evt);
             }
         });
 
-        ShoeImage.setIcon(new javax.swing.ImageIcon("C:\\Users\\gosta\\Documents\\NetBeansProjects\\DistributedProject\\src\\main\\java\\icons\\Shoe.jpg")); // NOI18N
         ShoeImage.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ShoeImageMouseClicked(evt);
             }
         });
 
-        ShirtImage.setIcon(new javax.swing.ImageIcon("C:\\Users\\gosta\\Documents\\NetBeansProjects\\DistributedProject\\src\\main\\java\\icons\\TShirt.jpg")); // NOI18N
         ShirtImage.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 ShirtImageMouseClicked(evt);
@@ -126,7 +123,7 @@ public class StorePage extends javax.swing.JFrame {
             }
         });
 
-        BackButton.setText("Back");
+        BackButton.setText("Exit");
         BackButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BackButtonActionPerformed(evt);
@@ -158,7 +155,7 @@ public class StorePage extends javax.swing.JFrame {
                                 .addComponent(HatImage, javax.swing.GroupLayout.Alignment.TRAILING)
                                 .addComponent(Title))
                             .addComponent(HatPrice))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(ShoeImage)
                             .addComponent(ShoeText)
@@ -229,8 +226,6 @@ public class StorePage extends javax.swing.JFrame {
     }//GEN-LAST:event_ContinueButtonActionPerformed
 
     private void BackButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackButtonActionPerformed
-        WelcomePage WP = new WelcomePage();
-        WP.setVisible(true);
         MS.ExitStorePage();
         this.dispose();
     }//GEN-LAST:event_BackButtonActionPerformed

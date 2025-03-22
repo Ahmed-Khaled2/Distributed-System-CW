@@ -43,7 +43,7 @@ public class MiddleServer implements Runnable {
 
     public void ExitStorePage() {
         CR.setStatus("Offline");
-        CR.setViewing("Welcome Page");
+        CR.setViewing("----");
         ISC.UpdateQueue(CustomerQueue);
     }
 
